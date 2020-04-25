@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: url('../img//fon-bg.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin: 0 0 25px;
+    background-color: #413535;
+}
+
+/* Header */
+
+.header {
+    padding: 20px 0px;
+    transition: background 0.4s linear;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.header__logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.header__title {
+    font-size: 26px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* Model */
+
+.model__inner {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    border: 3px solid rgb(99, 88, 88); 
+    border-radius: 5px; 
+    padding: 10px;       
+}
+
+.model__summary {
+    margin: 0 100px;
+}
+
+.model__name {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.model__specs,
+.model__price,
+.model__price--usd
+ {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #413535;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+   width: 150px;
+   padding: 10px 20px;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   outline: none;
+   color: #fff;
+   background-color: cornflowerblue;
+   border: 0;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 0.4s linear;
+}
+
+.btn:hover {
+    color: rgb(14, 35, 75);
+    background-color: rgb(230, 202, 202);
+}
+
+/* Order */
+
+.order {
+    padding: 20px;
+}
+
+.order__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order__block {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgb(99, 88, 88); 
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+.order__block-item {
+    width: 25%;
+}
+
+.order__block-item:nth-child(2),
+.order__block-item:nth-child(3) {
+    padding-right: 20px;
+}
+ 
+
+.order__block-title {
+    margin-bottom: 20px;    
+}
+
+.color {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.color__item {
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+   }
+   
+   .color--black {
+       background-color: black;
+   }
+   
+   .color--blue {
+       background-color: blue;
+   }
+   
+   .color--yellow {
+       background-color: rgb(221, 224, 8);
+   }
+
+   .color--gray {
+    background-color: gray;
+    }
+   
+   .color--red {
+       background-color: red;
+   }
+   
+   .color--white {
+       background-color: #fff;
+   }
+
+   .color--metallic {
+    background-color: #474141;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding-bottom: 25px;
+    }
+
+    .footer__text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #808080;
+    }
+    
+    .footer__text a {
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(58, 42, 42);
+        text-decoration: none;
+    }
+    
+/* Media */ 
+
+@media (max-width: 1051px) {    
+    
+    .bmw-img {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .model__inner {
+        flex-wrap: wrap;    
+    }
+
+    .model__summary {
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 814px) {
+
+    .header__inner {
+        flex-direction: column;
+    }
+
+    .order__block-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header__inner {
+        flex-direction: column;
+    }   
+}        
+
+@media (max-width: 699px) {
+
+    .bmw-img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .header__title {
+        display: none;
+    }
+	
+	    .order__block-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .color {
+        justify-content: center;
+    }
+}

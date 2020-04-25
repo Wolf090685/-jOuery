@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбери свой BMW</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="BMW">
+                </div>
+                <!-- /.header__logo -->
+
+                <h1 class="header__title">"BMW - the ultimate driving machine"</h1>
+                <!-- /.header__title -->
+            </div>
+            <!-- /.header__inner -->
+
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <hr>
+
+    <div class="model" id="model">
+        <div class="container">
+
+            <div class="model__inner">
+                <img src="img/metallic.jpg" alt="Автомобиль BMW" class="bmw-img">
+
+                <div class="model__summary">
+                    <div class="model__name">BMW X1</div>
+                    <div class="model__specs" id="model__specs"></div>
+                    <div class="model__price" id="modelPrice"></div>
+                    <div class="model__price--usd" id="modelPriceUSD"></div>
+                    <button class="btn">Заказать</button>
+                </div>
+            </div>
+            <!-- /.model__inner -->
+
+            <!-- /.model -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#imgHolder.imgHolder -->
+
+    <section class="order" id="order">
+        <div class="container">
+
+            <h2 class="order__title">Выберите желаемые характеристики</h2>
+
+            <form action="#" id="orderForm">
+
+                <div class="order__block">
+
+                    <div class="order__block-item">
+                        <h3 class="order__block-title">Двигатель</h3>
+                        <div class="order__block-select">
+                            <input type="radio" name="engine" id="engine1400" value="624900" checked>
+                            <label for="engine1400">1.4л (100 л.с.)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                        <div class="order__block-select">
+                            <input type="radio" name="engine" id="engine1600" value="749900">
+                            <label for="engine1600">1.6л (123 л.с.)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                    </div>
+                    <!-- /.order__block-item -->
+
+                    <div class="order__block-item">
+                        <h3 class="order__block-title">Коробка передач</h3>
+                        <div class="order__block-select">
+                            <input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+                            <label for="transmission6MT">Ручная, 6 ступеней (6МТ)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                        <div class="order__block-select">
+                            <input type="radio" name="transmission" id="transmissionAT" value="125000">
+                            <label for="transmissionAT">Автоматическая, 6 ступеней (6АТ)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                    </div>
+                    <!-- /.order__block-item -->
+
+                    <div class="order__block-item">
+                        <h3 class="order__block-title">Пакет услуг</h3>
+                        <div class="order__block-select">
+                            <input type="radio" name="package" id="packageActive" value="0" checked>
+                            <label for="packageActive">Active (базовая комплектация)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                        <div class="order__block-select">
+                            <input type="radio" name="package" id="packageActivePlus" value="85000">
+                            <label for="packageActivePlus">ActivePlus (кондиционер)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                        <div class="order__block-select">
+                            <input type="radio" name="package" id="packageComfort" value="130000">
+                            <label for="packageComfort">Comfort (климатконтролль)</label>
+                        </div>
+                        <!-- /.order__block-select -->
+                    </div>
+                    <!-- /.order__block-item -->
+
+                    <div class="order__block-item">
+                        <h3 class="order__block-title">Цвет кузова</h3>
+                        <div class="color" id="color">
+                            <div class="color__item color--blue" title='синий' data-img-path="img/blue.jpg">1</div>
+                            <div class="color__item color--black" title='черный' data-img-path="img/black.jpg">2</div>
+                            <div class="color__item color--white" title='белый' data-img-path="img/white.jpg">3</div>
+                            <div class="color__item color--yellow" title='желтый' data-img-path="img/yellow.jpg">4</div>
+                            <div class="color__item color--gray" title='серый' data-img-path="img/gray.jpg">5</div>
+                            <div class="color__item color--metallic" title='металлик' data-img-path="img/metallic.jpg">6
+                            </div>
+                            <div class="color__item color--red" title='красный' data-img-path="img/red.jpg">7</div>
+                        </div>
+                        <!-- /#colorsSelector.colorsSelector -->
+
+                    </div>
+                    <!-- /.order__block-item -->
+                </div>
+                <!-- /.order__block -->
+
+            </form>
+            <!-- /#selection -->
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#order.order -->
+
+    <hr>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">
+                <div>Copyright © 2020 "BMW - the ultimate driving machine". All Rights Reserved</div>
+                <div>Made by <a href="https://vk.com/id215660060" target="blank"> Aliaksandr Dumaronak</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
